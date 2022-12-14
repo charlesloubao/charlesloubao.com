@@ -1,0 +1,19 @@
+.button {
+  @apply inline-block mr-2 bg-indigo-600 transition-colors text-white font-semibold px-4 py-2 rounded-md hover:bg-indigo-500 cursor-pointer
+}
+
+.textField {
+  &:not(:last-child) {
+    @apply mb-4
+  }
+  .label {
+    @apply block mb-2 font-semibold
+  }
+  .input {
+    @apply block w-full border p-2 rounded-md outline-none;
+
+    &:focus {
+      @apply border-indigo-500 border-2;
+    }
+  }
+}
